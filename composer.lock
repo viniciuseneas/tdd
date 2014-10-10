@@ -5,7 +5,9 @@
         "This file is @generated automatically"
     ],
     "hash": "8e649ca41dd60f03296d6ba6bb0f979a",
-    "packages": [],
+    "packages": [
+
+    ],
     "packages-dev": [
         {
             "name": "doctrine/instantiator",
@@ -751,10 +753,17 @@
             "time": "2014-09-22 09:14:18"
         }
     ],
-    "aliases": [],
+    "aliases": [
+
+    ],
     "minimum-stability": "stable",
-    "stability-flags": [],
-    "prefer-stable": false,
-    "platform": [],
-    "platform-dev": []
+    "stability-flags": [
+
+    ],
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
 }
