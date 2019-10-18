@@ -15,38 +15,59 @@ namespace Vox\Treinamento\Tdd;
  */
 class Calculadora
 {
+    /**
+    * @return float
+    */
     public function somar($a, $b) 
     {
         $this->verificaArgumento($a, $b);
         
-        return $a + $b;
+        return floatval($a + $b);
     }
-    
+
+    /**
+    * @return float
+    */
     public function subtrair($a, $b) 
     {
         $this->verificaArgumento($a, $b);
-        return $a - $b;
+
+        return floatval($a - $b);
     }
-    
+
+    /**
+    * @return float
+    */
     public function multiplicar($a, $b) 
     {
         $this->verificaArgumento($a, $b);
-         return $a * $b;
+
+         return floatval($a * $b);
     }
     
+    /**
+    * @return float
+    */
     public function dividir($a, $b) 
     {
         $this->verificaArgumentoDivisao($a, $b);
-        return $a / $b;
+
+        return floatval($a / $b);
     }
     
+    /**
+    * @return float
+    */
     public function raizQuadrada($a) 
     {
         $this->verificaArgumentoRaizQuadrada($a);
         
-        return $this->multiplicacao($a, $a);
+        return floatval($this->multiplicacao($a, $a));
     }
     
+    /**
+    * return bool
+    */
     public function verificaArgumento($a, $b) 
     {
         if (!(is_numeric($a) && is_numeric($b)) ) {
